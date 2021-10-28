@@ -1,5 +1,8 @@
 package com.hendisantika;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.Type;
 
 import javax.persistence.Column;
@@ -21,6 +24,9 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "MY_TABLE", schema = "public")
 @org.hibernate.annotations.TypeDef(name = "JsonType", typeClass = JsonType.class)
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class MyTable {
 
     @Id

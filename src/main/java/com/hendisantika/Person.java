@@ -4,6 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
+
 /**
  * Created by IntelliJ IDEA.
  * Project : spring-boot-json-mapping-postgres
@@ -16,7 +18,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Person {
+public class Person implements Serializable {
     private String name;
     private int age;
     private String address;
