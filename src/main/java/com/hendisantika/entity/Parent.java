@@ -10,14 +10,23 @@ package com.hendisantika.entity;
  * Time: 17.15
  */
 
+import com.vladmihalcea.hibernate.type.json.JsonBinaryType;
+import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.Type;
 import org.hibernate.annotations.TypeDef;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.io.Serializable;
-import java.util.List;Data
+import java.util.List;
 
+import static javax.persistence.GenerationType.SEQUENCE;
+
+@Data
 @NoArgsConstructor
 @Entity
 @Table(name = "parents")
