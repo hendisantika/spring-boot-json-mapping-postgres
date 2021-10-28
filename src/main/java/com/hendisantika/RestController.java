@@ -1,6 +1,7 @@
 package com.hendisantika;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 
 /**
  * Created by IntelliJ IDEA.
@@ -15,4 +16,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class RestController {
     @Autowired
     private MyTableRepository repository;
+
+    @GetMapping("/getData")
+    public Iterable<MyTable> getData() {
+        return repository.findAll();
+    }
+
 }
