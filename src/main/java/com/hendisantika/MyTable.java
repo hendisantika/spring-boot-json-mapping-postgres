@@ -19,7 +19,7 @@ import javax.persistence.Table;
  * Time: 16.42
  */
 @Entity
-@Table(name = "MY_TABLE", schema = "users")
+@Table(name = "MY_TABLE", schema = "public")
 @org.hibernate.annotations.TypeDef(name = "JsonType", typeClass = JsonType.class)
 public class MyTable {
 
