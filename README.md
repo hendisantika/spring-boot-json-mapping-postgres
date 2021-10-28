@@ -56,3 +56,18 @@ curl http://localhost:8080/getData
     }
 ]
 ```
+
+### Image Screen shots
+
+Add New Data
+
+![Add New Data](img/add.png "Add New Data")
+
+Get All Data
+
+![Get All Data](img/list.png "Get All Data")
+
+SQL Console
+
+![SQL Console](img/data.png "SQL Console")
+
